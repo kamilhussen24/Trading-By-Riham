@@ -39,7 +39,7 @@ src="https://www.facebook.com/tr?id=1282503507098924&ev=PageView&noscript=1"
   }
 
   header {
-    background: linear-gradient(to bottom, #FFD700, #FFFFFF);
+    background: linear-gradient(to bottom, #1E2367, #FFFFFF);
     padding: 40px 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   }
@@ -64,17 +64,18 @@ src="https://www.facebook.com/tr?id=1282503507098924&ev=PageView&noscript=1"
   }
 
   h1 {
-    margin: 0;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    animation: fadeIn 1.5s ease-in-out;
-  }
+  margin: 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #0D47A1; /* সুন্দর গোল্ডেন ইয়েলো */
+  animation: fadeIn 1.5s ease-in-out;
+}
 
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
   .main-text {
     margin: 40px auto;
@@ -257,6 +258,22 @@ src="https://www.facebook.com/tr?id=1282503507098924&ev=PageView&noscript=1"
       height: 11px;
     }
   }
+  
+  .click-hand {
+  font-size: 26px;
+  margin-top: 4px;
+  color: #FFD700; /* গোল্ডেন ইয়েলো */
+  text-shadow: 
+    0 0 5px rgba(255, 215, 0, 0.7),
+    0 0 10px rgba(255, 215, 0, 0.6),
+    0 0 15px rgba(255, 215, 0, 0.5);
+  animation: upDown 1s infinite;
+}
+
+@keyframes upDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
 
   /* খুব ছোট মোবাইলের জন্য */
   @media (max-width: 480px) {
@@ -281,13 +298,13 @@ src="https://www.facebook.com/tr?id=1282503507098924&ev=PageView&noscript=1"
 <body>
   <header>
     <!-- কাস্টম লোগো - ক্লিক করলেও টেলিগ্রামে যাবে -->
-    <img class="custom-logo" src="https://raw.githubusercontent.com/kamilhussen24/New-Zone/refs/heads/main/IMG_20260413_193528_329.jpg"
+    <img class="custom-logo" src="https://raw.githubusercontent.com/kamilhussen24/Trading-By-Riham/refs/heads/main/IMG_20260420_220407_400.jpg"
          alt="Brothers Traders Logo" onclick="joinChannels()">
     <h1>Trading By Riham</h1>
   </header>
 
   <div class="main-text">
-    আপনি যদি Quotex  এ ট্রেড করে লসে থাকেন তাহলে আপনি আমাদের এই <strong>Trading By Riham</strong> গ্রুপে জয়েন হতে পারেন <br><br>
+    আপনি যদি Quotex  এ ট্রেড করে লসে থাকেন তাহলে আপনি আমাদের এই <strong>Trading By Riham</strong> গ্রুপে জয়েন হতে পারেন !<br>
     তুমি যদি প্রফেশনালি ট্রেড করতে চাও তাহলে আজই জয়েন করো! এটা একদম ফ্রি!
   </div>
 
@@ -303,6 +320,8 @@ src="https://www.facebook.com/tr?id=1282503507098924&ev=PageView&noscript=1"
          style="height: 24px; vertical-align: middle; filter: invert(1);" />
     JOIN NOW
   </button>
+
+  <div class="click-hand">👆</div>
   <hr>
 
   <div class="privacy-box">
@@ -323,7 +342,7 @@ src="https://www.facebook.com/tr?id=1282503507098924&ev=PageView&noscript=1"
 
   <script>
     // Telegram গ্রুপের লিংক
-    const TELEGRAM_LINK = 'https://t.me/+oGqFRfJLV_AyODNl';
+    const TELEGRAM_LINK = 'https://t.me/+mCWD9EC7EI5mMzg1';
     
     function joinChannels() {
       // Facebook Pixel ইভেন্ট
