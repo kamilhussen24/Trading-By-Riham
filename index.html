@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1282503507098924');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1282503507098924&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trading By Riham</title>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #FFFFFF;
+    color: #D41920;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  header {
+    background: linear-gradient(to bottom, #FFD700, #FFFFFF);
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  /* লোগো স্টাইল - ক্লিকযোগ্য বোঝানোর জন্য */
+  .custom-logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 0 8px #D41920);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 50%;
+    background: rgba(255, 215, 0, 0.1);
+    padding: 5px;
+  }
+  
+  .custom-logo:hover {
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 12px #D41920);
+    background: rgba(255, 215, 0, 0.2);
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .main-text {
+    margin: 40px auto;
+    width: 85%;
+    max-width: 800px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    animation: slideUp 1s ease-out;
+  }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .join-btn {
+    background: linear-gradient(135deg, #0088CC, #0088CC);
+    color: #121212;
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+    margin: 20px auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.4s ease;
+  }
+
+  .join-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 215, 0, 0.6);
+    background: linear-gradient(135deg, #ff8c00, #D41920);
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #D41920, transparent);
+    margin: 50px auto;
+    width: 70%;
+  }
+
+  .privacy-box {
+    background-color: #FFFFFF;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+    width: 85%;
+    max-width: 800px;
+    color: #D41920;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  .privacy-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .privacy-box p {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+
+  /* ফুটার স্টাইল - এখন লেখার সাথে মিল রেখে */
+  footer {
+    margin: 50px 0 30px;
+    padding: 0 20px;
+    font-size: 0.85rem;
+    color: #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: nowrap;
+  }
+
+  .copyright-text {
+    letter-spacing: 0.3px;
+    font-size: 0.85rem;
+    color: #888;
+  }
+
+  /* টেলিগ্রাম আইকন - লেখার সাইজের সাথে মিল রেখে */
+  .telegram-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    background: linear-gradient(135deg, #D41920, #ff8c00);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 1px 5px rgba(255, 215, 0, 0.3);
+    flex-shrink: 0;
+  }
+
+  .telegram-link:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 3px 10px rgba(255, 215, 0, 0.5);
+    background: linear-gradient(135deg, #ff8c00, #D41920);
+  }
+
+  .telegram-link img {
+    width: 14px;
+    height: 14px;
+    filter: brightness(0) invert(1);
+    transition: all 0.3s ease;
+  }
+
+  .telegram-link:hover img {
+    transform: scale(1.1);
+  }
+
+  .icon-container {
+    margin: 20px 0;
+  }
+
+  .icon-container img {
+    width: 50px;
+    height: auto;
+    margin: 0 10px;
+    filter: drop-shadow(0 0 5px #D41920);
+    transition: transform 0.3s;
+  }
+
+  .icon-container img:hover {
+    transform: scale(1.2);
+  }
+
+  /* ডেস্কটপে */
+  @media (min-width: 769px) {
+    footer {
+      gap: 10px;
+    }
+    .copyright-text {
+      font-size: 0.9rem;
+    }
+    .telegram-link {
+      width: 24px;
+      height: 24px;
+    }
+    .telegram-link img {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  /* মোবাইলে - আর বড় হবে না */
+  @media (max-width: 768px) {
+    .custom-logo {
+      width: 60px;
+      height: 60px;
+    }
+    h1 {
+      font-size: 1.6rem;
+    }
+    .join-btn {
+      font-size: 1.2rem;
+      padding: 12px 30px;
+    }
+    footer {
+      gap: 6px;
+    }
+    .copyright-text {
+      font-size: 0.75rem;
+    }
+    .telegram-link {
+      width: 20px;
+      height: 20px;
+    }
+    .telegram-link img {
+      width: 11px;
+      height: 11px;
+    }
+  }
+
+  /* খুব ছোট মোবাইলের জন্য */
+  @media (max-width: 480px) {
+    footer {
+      gap: 5px;
+    }
+    .copyright-text {
+      font-size: 0.7rem;
+    }
+    .telegram-link {
+      width: 18px;
+      height: 18px;
+    }
+    .telegram-link img {
+      width: 13px;
+      height: 13px;
+    }
+  }
+</style>
+</head>
+
+<body>
+  <header>
+    <!-- কাস্টম লোগো - ক্লিক করলেও টেলিগ্রামে যাবে -->
+    <img class="custom-logo" src="https://raw.githubusercontent.com/kamilhussen24/New-Zone/refs/heads/main/IMG_20260413_193528_329.jpg"
+         alt="Brothers Traders Logo" onclick="joinChannels()">
+    <h1>Trading By Riham</h1>
+  </header>
+
+  <div class="main-text">
+    আপনি যদি Quotex  এ ট্রেড করে লসে থাকেন তাহলে আপনি আমাদের এই <strong>Trading By Riham</strong> গ্রুপে জয়েন হতে পারেন <br><br>
+    তুমি যদি প্রফেশনালি ট্রেড করতে চাও তাহলে আজই জয়েন করো! এটা একদম ফ্রি!
+  </div>
+
+  <div class="icon-container">
+    <img src="https://img.icons8.com/ios-filled/50/FFD700/stock-share.png" alt="trading" />
+    <img src="https://img.icons8.com/ios-filled/50/D41920/graph.png" alt="chart" />
+    <img src="https://img.icons8.com/ios-filled/50/FFD700/money-bag.png" alt="profit" />
+  </div>
+
+  <button class="join-btn" onclick="joinChannels()">
+    <img src="https://img.icons8.com/ios-filled/50/telegram.png" 
+         alt="telegram" 
+         style="height: 24px; vertical-align: middle; filter: invert(1);" />
+    JOIN NOW
+  </button>
+  <hr>
+
+  <div class="privacy-box">
+    <h2>Privacy Policy</h2>
+    <p>আমাদের ওয়েবসাইট আপনার কোনো ব্যক্তিগত তথ্য সংগ্রহ করে না।</p>
+    <p>এই পেজ শুধুমাত্র আপনাকে আমাদের অফিসিয়াল Telegram চ্যানেলে রিডাইরেক্ট করার জন্য তৈরি।</p>
+    <p>আমরা কোনো লগইন, পেমেন্ট, বা রেজিস্ট্রেশনের তথ্য গ্রহণ করি না।</p>
+    <p>আপনার গোপনীয়তা আমাদের কাছে গুরুত্বপূর্ণ। আমরা কোনো cookies বা tracking tools ব্যবহার করি না।</p>
+    <p>প্রশ্ন থাকলে আমাদের Telegram চ্যানেলে যোগাযোগ করতে পারেন।</p>
+  </div>
+
+  <footer>
+    <span class="copyright-text">© 2026 Ads By KDex</span>
+    <a href="https://t.me/+DIKkgKBpsDE4ZWI9" target="_blank" rel="noopener noreferrer" class="telegram-link" title="Join our Telegram">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/telegram-app.png" alt="Telegram">
+    </a>
+  </footer>
+
+  <script>
+    // Telegram গ্রুপের লিংক
+    const TELEGRAM_LINK = 'https://t.me/+oGqFRfJLV_AyODNl';
+    
+    function joinChannels() {
+      // Facebook Pixel ইভেন্ট
+      fbq('track', 'Purchase', {
+        value: 100,
+        currency: 'BDT'
+      });
+      
+      // প্রথমে নতুন ট্যাবে Telegram খোলা
+      window.open(TELEGRAM_LINK, '_blank');
+      
+      // স্মার্ট টেকনিক: 2 সেকেন্ড পর বর্তমান ট্যাবেও খোলা হবে
+      setTimeout(function() {
+        window.location.href = TELEGRAM_LINK;
+      }, 2000);
+    }
+  </script>
+</body>
+</html>
